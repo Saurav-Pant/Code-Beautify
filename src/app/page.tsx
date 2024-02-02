@@ -11,8 +11,8 @@ type Props = {};
 
 const Page = (props: Props) => {
   return (
-    <div className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#0F2027] via-[#203A43] to-[#2C5364] min-h-screen w-full">
-      <div className="flex flex-col items-center justify-center h-[100vh] text-white">
+    <div className="bg-gradient-radial from-[#16202a] to-[#394450] min-h-screen w-full">
+      <div className="flex flex-col items-center justify-center h-[100vh] text-white lg:mx-32">
         <div className="text-3xl sm:text-5xl md:text-7xl font-extrabold mb-4 text-center">
           <span
             className="bg-gradient-to-tl from-slate-200 via-gray-400 to-white text-transparent bg-clip-text"
@@ -32,11 +32,11 @@ const Page = (props: Props) => {
           </span>
         </div>
         <div
-          className={`text-base lg:text-xl text-center pt-4 md:mx-40 mx-4`}
+          className={`text-base lg:text-xl text-center pt-4 md:mx-40 mx-4 text-gray-500`}
         >
-          Simplify, organize, and enhance your code effortlessly. CodeBeautify
-          is your go-to tool for achieving clean, readable, and beautiful code.
-          Elevate your coding experience today!
+          Simplify, Create, and enhance your code effortlessly. CodeBeautify
+          is your go-to tool for Sharing Clean, readable, and beautiful code.
+          {/* <span className="hidden md:block">Elevate your coding experience today!</span> */}
         </div>
       </div>
     </div>
