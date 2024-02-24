@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const btn = pathname;
   return (
-    <div className="flex justify-between items-center p-4 fixed w-full">
+    <div className="flex justify-between items-center p-4 fixed w-full z-10">
       <div className="text-white">
         <Link href="/" className="font-bold text-xs md:text-xl">
           <h3
@@ -41,7 +41,7 @@ const Navbar = () => {
         ) : (
           <div>
             <Link href="/CodeBeautify">
-              <button className="bg-gray-800 text-white px-2 py-1 md:px-4 md:py-2 rounded-md hover:bg-gray-700 focus:outline-none focus:shadow-outline-gray transition-colors duration-300 text-xs md:text-xl">
+              <button className="bg-black text-white px-2 py-1 md:px-4 md:py-2 rounded-md hover:bg-gray-700 focus:outline-none focus:shadow-outline-gray transition-colors duration-300 text-xs md:text-xl">
                 Beautify Code
               </button>
             </Link>
