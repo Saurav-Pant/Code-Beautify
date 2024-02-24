@@ -1,5 +1,7 @@
 import React from "react";
 import { Roboto } from "next/font/google";
+import Spotlight from "@/components/ui/Spotlight";
+import { cn } from "@/utils/cn";
 
 const roboto = Roboto({
   weight: "400",
@@ -11,7 +13,11 @@ type Props = {};
 
 const Page = (props: Props) => {
   return (
-    <div className="bg-gradient-radial from-[#16202a] to-[#394450] min-h-screen w-full">
+    <div className="bg-black/[0.96] min-h-screen w-full">
+        <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="white"
+      />
       <div className="flex flex-col items-center justify-center h-[100vh] text-white lg:mx-32">
         <div className="text-3xl sm:text-5xl md:text-7xl font-extrabold mb-4 text-center">
           <span
